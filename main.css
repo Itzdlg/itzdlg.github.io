@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+a.nouniform {
+  text-decoration: none;
+  color: black;
+}
+
+.header {
+  height: 3.5rem;
+  background: #1d1d1d;
+  position: sticky;
+}
+.header p {
+  display: inline-block;
+  font-family: "Montserrat";
+  font-size: 2.25em;
+  font-weight: 700;
+  color: white;
+  padding-top: 5px;
+  padding-left: 5px;
+}
+.header .navigation {
+  display: inline-flex;
+  justify-content: center;
+  position: absolute;
+  top: 12.5px;
+}
+.header .navigation .navigatable {
+  font-family: "Quicksand", sans-serrif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-left: 15px;
+  color: #009bf1;
+}
+.header .navigation .navigatable:hover {
+  border-bottom: 2px solid #009bf1;
+}
+
+@media (max-width: 981px) {
+  .header .navigation {
+    right: 5px;
+  }
+}
+@media (max-width: 526px) {
+  .header p {
+    display: none;
+  }
+
+  .header .navigation {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
