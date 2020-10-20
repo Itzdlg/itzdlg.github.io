@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat';
+}
+
 .about-container {
   height: 700px;
   width: 100%;
@@ -128,9 +133,9 @@
   height: 700px;
   margin-top: 200px;
   padding-bottom: 100px;
+  position: relative;
   #contact-wave {
     background-color: white;
-    height: 230px;
     img {
       transform: scale(1, 1);
     }
@@ -148,8 +153,7 @@
 
   #contact-methods-container {
     display: grid;
-    grid-template-areas:
-      "discord spigot email";
+    grid-template-areas: "spigot discord email";
     justify-content: center;
 
     .contact-method {
@@ -187,12 +191,6 @@
         box-shadow: 0 8px 16px 0 #ddd;
       }
     }
-  }
-}
-
-@media (max-width: 1250px) {
-  #contact-wave {
-    display: none;
   }
 }
 
